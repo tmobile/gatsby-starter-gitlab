@@ -1,0 +1,53 @@
+{
+  "cSpell.words": [
+    "NTWs",
+    "loadershim",
+    "mailto",
+    "preinstall",
+    "promisify",
+    "styl",
+    "subnav",
+    "typegen",
+    "unist"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "plugins/**/*.js": true,
+    "plugins/**/*.js.map": true,
+    "plugins/**/*.d.ts": true,
+    "plugins/**/*.ts.map": true,
+    "**/.cache": true,
+    "**/__generated__": true,
+    "reduxcache*/": true
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#fa1b49",
+    "activityBar.activeBackground": "#fa1b49",
+    "activityBar.activeBorder": "#155e02",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#155e02",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "titleBar.activeBackground": "#dd0531",
+    "titleBar.inactiveBackground": "#dd053199",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#dd0531",
+    "statusBarItem.hoverBackground": "#fa1b49",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBar.border": "#dd0531",
+    "titleBar.border": "#dd0531"
+  },
+  "peacock.color": "#dd0531"
+}

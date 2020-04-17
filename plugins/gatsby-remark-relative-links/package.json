@@ -1,0 +1,27 @@
+{
+  "name": "gatsby-remark-relative-links",
+  "version": "0.0.0",
+  "description": "Ensures links in markdown work in your Gatsby site",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "echo \"Please add unit tests\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/tmobile/gatsby-sta"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby transformer",
+    "markdown"
+  ],
+  "author": "James Tharpe",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "unist-util-visit": "^2.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}

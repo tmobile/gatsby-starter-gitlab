@@ -1,0 +1,45 @@
+image: node:10
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+build:
+  stage: build
+  script:
+    # These overrides are required since gatsby-source-gitlab clones docs repos
+    # directly as part of the build
+    - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/".insteadOf "git@gitlab.com:"
+    - git config --global url."https://".insteadOf git://
+    - CI=true
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - public
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+
+test:
+  stage: build
+  script:
+    - npm install
+    - npm test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+
+pages:
+  image: alpine:latest
+  stage: deploy
+  script:
+    - echo "GitLab Pages magic happens here"
+  dependencies:
+    - build # Pulls in the artifacts from the build stage
+  artifacts:
+    paths:
+      - public # Required artifact of Gitlab pages
+  # only:
+  #   - master

@@ -1,0 +1,33 @@
+$gray-dark: #6a6a6a !default;
+$magenta: #ed008c !default;
+$magenta-dark: #861b54 !default;
+$primary: $magenta !default;
+$jumbotron-bg: $magenta !default;
+$jumbotron-color: #ffffff !default;
+$dark: $gray-dark !default;
+
+// $body-bg: #000;
+// $body-color: #111;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: Tele-Nor, sans-serif;
+}
+
+h1 {
+  @extend .mt-3;
+}
+
+table {
+  @extend .table, .table-striped, .table-bordered;
+}
+
+.jumbotron {
+  background: linear-gradient($magenta, $magenta-dark);
+}
+
+.link-active-page {
+  @extend .text-primary;
+  font-weight: bold;
+}
